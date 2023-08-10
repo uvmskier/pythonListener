@@ -1,0 +1,11 @@
+[Unit]
+Description=Python listener for linktap events
+
+[Service]
+Type=simple
+Restart=always
+ExecStart=/usr/bin/python3 /home/brian/python-scripts/webhook.py
+User=brian
+
+[Install]
+WantedBy=multi-user.target
